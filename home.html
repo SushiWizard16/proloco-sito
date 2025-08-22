@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosa vedere? - ProLoco Calatabiano</title>
+  <!-- Font moderno -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      background: linear-gradient(to bottom, #0e8ac7, #1b73b5);
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    header {
+      padding: 20px;
+      background: white;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    .logo {
+      height: 120px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 15px 0 0;
+      font-size: 1.8rem;
+      color: #e95e0f;
+    }
+
+    p {
+      margin: 20px;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+
+    .buttons {
+      margin: 40px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      background: linear-gradient(to bottom, #e95e0f, #e27739);
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .btn-img {
+      width: 250px; /* Puoi cambiare la dimensione */
+      height: auto;
+      object-fit: cover; /* Mantiene il rapporto di aspetto senza deformare */
+      border-radius: 10px;
+      margin-bottom: 10px;
+}
+
+    .link:hover {
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="img/logo.png" alt="Logo Pro Loco">
+    <h1>Benvenuti a Calatabiano</h1>
+  </header>
+
+  <p>Scansiona i QR Code in giro o clicca per scoprire le attrazioni del paese</p>
+
+  <div class="buttons">
+  <a class="link" href="chiesamadre.html">
+    <img class="btn-img" src="img/chiesamadre/foto1.jpg" alt="Chiesa Madre"> Chiesa Madre
+  </a>
+  <a class="link" href="castello.html">
+    <img class="btn-img" src="img/castello/foto5.jpg" alt="Castello"> Castello Arabo - Normanno
+  </a>
+  <a class="link" href="spiaggia.html">
+    <img class="btn-img" src="img/spiaggia/foto1.jpg" alt="Spiaggia"> Spiaggia di San Marco
+  </a>
+</div>
+</body>
+</html>
