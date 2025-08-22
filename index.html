@@ -53,8 +53,10 @@
     }
 
     .link {
-      display: inline-block;
-      padding: 15px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
       background: linear-gradient(to bottom, #e95e0f, #e27739);
       color: white;
       border-radius: 10px;
@@ -64,6 +66,14 @@
       transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
+
+    .btn-img {
+      width: 250px; /* Puoi cambiare la dimensione */
+      height: auto;
+      object-fit: cover; /* Mantiene il rapporto di aspetto senza deformare */
+      border-radius: 10px;
+      margin-bottom: 10px;
+}
 
     .link:hover {
       color: white;
@@ -81,9 +91,15 @@
   <p>Scansiona i QR Code in giro o clicca per scoprire le attrazioni del paese</p>
 
   <div class="buttons">
-    <a class="link" href="chiesamadre.html">Chiesa Madre</a>
-    <a class="link" href="castello.html">Castello Arabo - Normanno</a>
-    <a class="link" href="spiaggia.html">Spiaggia di San Marco</a>
-  </div>
+  <a class="link" href="chiesamadre.html">
+    <img class="btn-img" src="img/chiesamadre/foto1.jpg" alt="Chiesa Madre"> Chiesa Madre
+  </a>
+  <a class="link" href="castello.html">
+    <img class="btn-img" src="img/castello/foto5.jpg" alt="Castello"> Castello Arabo - Normanno
+  </a>
+  <a class="link" href="spiaggia.html">
+    <img class="btn-img" src="img/spiaggia/foto1.jpg" alt="Spiaggia"> Spiaggia di San Marco
+  </a>
+</div>
 </body>
 </html>
